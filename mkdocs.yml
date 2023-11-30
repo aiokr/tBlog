@@ -1,0 +1,26 @@
+site_name: Tenth's Blog
+theme:
+  name: material
+  icon:
+    logo: material/blur
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: tripress
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: tridark
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+plugins:
+  - blog:
+      blog_dir: .
+      pagination_per_page: 12
+  - search
+extra_css:
+  - stylesheets/extra.css
